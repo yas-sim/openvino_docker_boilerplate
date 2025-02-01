@@ -16,13 +16,13 @@ docker build -t ov_app .
 
 ### How to run the container
 ```sh
-docker run --rm -v N:\work\openvino-docker\input:/app/input -v N:\work\openvino-docker\output:/app/output ov_app
+docker run --rm -v <host_working_dir>/input:/app/input -v <host_working_dir>/output:/app/output ov_app
 
 ```
 
 ### Start the container for debugging / testing
 ```sh
-docker run --rm -it -v N:\work\openvino-docker\input:/app/input -v N:\work\openvino-docker\output:/app/output ov_app /usr/bin/bash
+docker run --rm -it -v <host_working_dir>/input:/app/input -v <host_working_dir>/output:/app/output ov_app /usr/bin/bash
 ```
 
 
